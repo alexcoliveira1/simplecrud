@@ -1,0 +1,24 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Product</h2>
+<form>
+  <div class="form-group">
+    <label for="product">Name:</label>
+    <input [(ngModel)]="product.name" placeholder="Product" name="product" class="form-control" id="name">
+  </div>
+
+  <div class="form-group">
+    <label for="description">Description:</label>
+    <input [(ngModel)]="product.description" placeholder="Description" name="description" class="form-control" id="description">
+  </div>
+
+  <div class="form-group">
+    <label for="category">Category:</label>
+    <select [(ngModel)]="category" name="cateogory">
+      <option *ngFor="let c of categories" [ngValue]="c">{{c.name}}</option>
+    </select>
+    
+  </div>
+
+  <button class="btn btn-success" (click)="createProduct()">Create</button>
+</form>
+</div>

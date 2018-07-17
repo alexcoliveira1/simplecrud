@@ -1,0 +1,23 @@
+<div class="col-md-6">
+<h2> Product Details</h2>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th class="hidden">Id</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Category</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let product of products">
+    <td class="hidden">{{product.id}}</td>
+    <td>{{product.name}}</td>
+    <td>{{product.description}}</td>
+    <td>{{product.category && product.category.name}}</td>
+    <td><button class="btn btn-danger" (click)="deleteProduct(product)"> Delete Product</button></td>
+  </tr>
+  </tbody>
+</table>
+</div>

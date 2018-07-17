@@ -1,0 +1,7 @@
+simplecrud-app/dist
+simplecrud-app/target
+simplecrud-app/node
+simplecrud-app/node_modules
+simplecrud-api/target
+.project
+.settings
